@@ -445,7 +445,9 @@ class Helix3
 
 						$output .= '<div class="sp-column ' . ($column->settings->custom_class) . '">';
 						$output .= '<jdoc:include type="message" />';
+						$output .= '<jdoc:include type="modules" name="above" style="xhtml" />';
 						$output .= '<jdoc:include type="component" />';
+						$output .= '<jdoc:include type="modules" name="bellow" style="xhtml" />';
 						$output .= '</div>';
 
 						$output .= '</div>';

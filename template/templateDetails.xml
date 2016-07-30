@@ -16,8 +16,11 @@
 
     <languages>
         <language tag="en-GB">en-GB.tpl_shaper_helix3.ini</language>
+        <language tag="pt-BR">pt-BR.tpl_shaper_helix3.ini</language>
     </languages>
     <positions>
+        <position>above</position>
+        <position>bellow</position>
         <position>title</position>
         <position>top1</position>
         <position>top2</position>

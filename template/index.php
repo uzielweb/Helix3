@@ -138,7 +138,23 @@ if($custom_js = $this->helix3->getParam('custom_js')) {
     ?>
 
     <jdoc:include type="head" />
-   
+    
+       <script type="text-javascript">
+       //Carrega o CKSLIDESHOW em modo PÁGINA INTEIRA (pode ser qualquer outra div, basta trocar as classes)
+    //Loads the CKSLIDESHOW in FULL PAGE mode. You can use any div. To do it change the class bellow.
+jQuery(document).ready(function() {
+getWidthAndHeight();
+});
+// make sure div stays full width/height on resize
+jQuery(window).resize(function() {
+getWidthAndHeight();
+});
+function getWidthAndHeight (){
+//var winWidth = jQuery(window).width();
+var winHeight = jQuery(window).height();
+jQuery('.slideshowck.camera_wrap').css({'min-height': winHeight,'max-height': winHeight,});
+}
+    </script>
     <?php
 
     $this->helix3->addCSS('bootstrap.min.css, font-awesome.min.css') // CSS Files

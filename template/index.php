@@ -10,6 +10,20 @@
 defined ('_JEXEC') or die ('resticted aceess');
 
 $doc = JFactory::getDocument();
+$doc = JFactory::getDocument();
+$app = JFactory::getApplication();
+
+// Obtém o Item de Menu atualmente ativo
+// Retrieve the current active menu item
+$currentMenuItem = $app->getMenu()->getActive();
+
+// Obtém os parâmetros do Item de Menu atualmente ativo
+// Retrieve the params of the current active menu item
+$params = $currentMenuItem->params;
+
+// Acessa o parâmetro necessário do Item de Menu atualmente ativo
+// Retrieve the needed param from current active menu item
+$pageclass = $params->get('pageclass_sfx');
 
 JHtml::_('jquery.framework');
 JHtml::_('bootstrap.framework'); //Force load Bootstrap
@@ -152,7 +166,7 @@ if($custom_js = $this->helix3->getParam('custom_js')) {
         }
     ?>
 </head>
-<body class="<?php echo $this->helix3->bodyClass( $body_classes ); ?>">
+<body class="<?php echo $this->helix3->bodyClass( $body_classes ).$pageclass; ?>">
     <div class="body-innerwrapper">
         <?php $this->helix3->generatelayout(); ?>
 

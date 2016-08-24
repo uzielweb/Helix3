@@ -1,6 +1,8 @@
+/*Smooth Scroll*/
 html{
   scroll-behaviour: smooth;
 }
+/*Change logo height when scroll*/
 .is-sticky .sp-default-logo {
     height: 48px;
     position: absolute;
@@ -16,4 +18,10 @@ html{
     -o-transition: all 0.35s ease-in-out 0s;
     transition: all 0.35s ease-in-out 0s;
     z-index: 3000;
+}
+/*HIDE OFFCANVAS Toggler in large devices*/
+@media all and (min-width: 768px){
+	#offcanvas-toggler{
+		display: none;
+	}
 }

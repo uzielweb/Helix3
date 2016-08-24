@@ -25,7 +25,12 @@ html{
     z-index: 3000;
     width: 100%;
 }
-
+/*Fix overflow in .body-innerwrapper */
+.body-innerwrapper {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
 /*HIDE OFFCANVAS Toggler in large devices*/
 @media all and (min-width: 768px){
 	#offcanvas-toggler{

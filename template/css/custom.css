@@ -3,7 +3,7 @@ html{
   scroll-behaviour: smooth;
 }
 /*Fix annoying dotted links on hover*/
-a {
+a,a:hover, a:active, a:focus {
    outline: 0;
 }
 /*Change logo height when scroll*/

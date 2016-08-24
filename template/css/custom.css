@@ -1,3 +1,19 @@
 html{
-scroll-behaviour: smooth;
+  scroll-behaviour: smooth;
+}
+.is-sticky .sp-default-logo {
+    height: 48px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.sp-default-logo {
+    height: 160px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.35s ease-in-out 0s;
+    -moz-transition: all 0.35s ease-in-out 0s;
+    -o-transition: all 0.35s ease-in-out 0s;
+    transition: all 0.35s ease-in-out 0s;
+    z-index: 3000;
 }

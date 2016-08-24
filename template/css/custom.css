@@ -25,3 +25,13 @@ html{
 		display: none;
 	}
 }
+
+@media all and (max-width:767px){
+    .sp-megamenu-parent{
+        display: none;
+    }
+    	#offcanvas-toggler{
+		display: block;
+	}
+
+}

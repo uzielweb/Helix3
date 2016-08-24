@@ -19,6 +19,13 @@ html{
     transition: all 0.35s ease-in-out 0s;
     z-index: 3000;
 }
+/*Put the header above content*/
+#sp-header-sticky-wrapper {
+    position: absolute;
+    z-index: 3000;
+    width: 100%;
+}
+
 /*HIDE OFFCANVAS Toggler in large devices*/
 @media all and (min-width: 768px){
 	#offcanvas-toggler{

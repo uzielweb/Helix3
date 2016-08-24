@@ -389,7 +389,7 @@ class Helix3
 						break;
 				}
 
-				$output .= '<' . $sematic . ' id="' . $id . '"' . $row_class . '>';
+				$output .= '<' . $sematic . ' id="' . $id . '"' . $row_class . '><div id="'.JFilterOutput::stringURLSafe($row->settings->name).'">';
 
 				if ($componentArea)
 				{
@@ -492,7 +492,7 @@ class Helix3
 					}
 				}
 
-				$output .= '</' . $sematic . '>';
+				$output .= '</div></' . $sematic . '>';
 			}
 		}
 

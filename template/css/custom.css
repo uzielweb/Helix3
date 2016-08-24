@@ -2,6 +2,10 @@
 html{
   scroll-behaviour: smooth;
 }
+/*Fix annoying dotted links on hover*/
+a {
+   outline: 0;
+}
 /*Change logo height when scroll*/
 .is-sticky .sp-default-logo {
     height: 48px;

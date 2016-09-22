@@ -179,7 +179,7 @@ if($custom_js = $this->helix3->getParam('custom_js')) {
         }
     ?>
 </head>
-<body class="<?php echo $this->helix3->bodyClass( $body_classes ).$pageclass; ?>">
+<body class="<?php echo $this->helix3->bodyClass( $body_classes ).$pageclass.' '.$currentMenuItem->alias; ?>">
     <div class="body-innerwrapper">
         <?php $this->helix3->generatelayout(); ?>
 

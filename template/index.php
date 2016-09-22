@@ -10,7 +10,6 @@
 defined ('_JEXEC') or die ('resticted aceess');
 
 $doc = JFactory::getDocument();
-$doc = JFactory::getDocument();
 $app = JFactory::getApplication();
 
 // Obtém o Item de Menu atualmente ativo
